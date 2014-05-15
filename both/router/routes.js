@@ -14,4 +14,5 @@ Router.map(function () {
     Example:
       this.route('home', {path: '/'});
   */
+  this.route('posts.index', {path: '/'});
 });

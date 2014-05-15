@@ -1,3 +1,46 @@
 <template name="MasterLayout">
+
+  <div class="ui fixed transparent inverted main menu">
+    <div class="container">
+      <div class="title item">
+        <b>Meteor Dose: </b> Weekly Dose of Meteor Web Framework
+      </div>
+
+      <div class="right menu">
+        <div class="vertically fitted borderless item">
+          <a class="item" href="#">About</a>
+          <a href="https://github.com/rizafahmi/mlog" data-content="View project on Github" class="popup icon github item">
+            <i class="icon github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!--./main menu -->
+
+
+
+  <div class="masthead segment">
+    <div class="ui page grid">
+      <div class="column">
+        <div class="introduction">
+          <h1 class="ui header">Meteor Dose</h1>
+          <h2 class="ui header">A weekly dose of Meteor Web Framework.</h2>
+          <p> This is a journal of the overlooked tiny bits in new web framework that blows my mind! Will update weekly, as a way to build the habit of writing something on a regular basis.</p>
+          <div class="ui action input large">
+            <input placeholder="Subscribe To Receive Weekly Dose" style="width: 345px" type="text">
+            <div class="ui button orange animated">
+              <div class="visible content">
+                Subscribe now
+              </div>
+              <div class="hidden content">
+                <i class="icon mail outline"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--./ masthead segment -->
+
   {{> yield}}
 </template>
