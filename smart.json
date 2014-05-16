@@ -1,6 +1,7 @@
 {
   "packages": {
     "semantic-ui": {},
-    "iron-router": {}
+    "iron-router": {},
+    "marked": {}
   }
 }

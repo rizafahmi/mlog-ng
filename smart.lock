@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "semantic-ui": {},
-      "iron-router": {}
+      "iron-router": {},
+      "marked": {}
     },
     "packages": {
       "semantic-ui": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "marked": {
+        "git": "https://github.com/chuangbo/meteor-marked.git",
+        "tag": "v0.3.2",
+        "commit": "850f63135cdeb05344c420bd586fd8af9cab75df"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
