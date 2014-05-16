@@ -1,0 +1,17 @@
+<template name="PostItem">
+  <div class="ui page grid segment">
+    <div class="column">
+      <h2 class="ui header">{{title}}</h2>
+      <div class="ui black label date">{{datePublish}}</div>
+      <p>{{#markdown}}{{{content}}}{{/markdown}}</p>
+      <a class="ui button orange small animated" href="{{pathFor 'postPage'}}">
+        <div class="visible content">
+          Read More
+        </div>
+        <div class="hidden content">
+          <i class="right arrow icon"></i>
+        </div>
+      </a>
+    </div>
+  </div> <!--./segment -->
+</template>
