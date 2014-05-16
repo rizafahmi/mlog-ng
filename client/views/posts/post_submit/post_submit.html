@@ -2,13 +2,14 @@
   <div class="ui page grid segment">
     <div class="column post submit">
       <div class="ui form">
-        <form name="postSubmit">
+        <form name="postSubmit" data-parsley-validate>
           <div class="field">
             <input name="title" id="title" placeholder="Your awesome article title"
-            type="text">
+            type="text" required>
           </div>
           <div class="field">
-            <textarea name="content" id="content" placeholder="Your awesome article content"></textarea>
+            <textarea name="content" id="content" 
+              placeholder="Your awesome article content" required></textarea>
           </div>
           <button class="ui orange submit button" type="submit">Save</button>
         </form>
