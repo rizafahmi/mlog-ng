@@ -1,7 +1,7 @@
 /*****************************************************************************/
-/* PostsIndex: Event Handlers and Helpers */
+/* MasterLayout: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.PostsIndex.events({
+Template.MasterLayout.events({
   /*
    * Example: 
    *  'click .selector': function (e, tmpl) {
@@ -10,20 +10,23 @@ Template.PostsIndex.events({
    */
 });
 
-Template.PostsIndex.helpers({
-  posts: function() {
-    return Posts.find();
-  }
+Template.MasterLayout.helpers({
+  /*
+   * Example: 
+   *  items: function () {
+   *    return Items.find();
+   *  }
+   */
 });
 
 /*****************************************************************************/
-/* PostsIndex: Lifecycle Hooks */
+/* MasterLayout: Lifecycle Hooks */
 /*****************************************************************************/
-Template.PostsIndex.created = function () {
+Template.MasterLayout.created = function () {
 };
 
-Template.PostsIndex.rendered = function () {
+Template.MasterLayout.rendered = function () {
 };
 
-Template.PostsIndex.destroyed = function () {
+Template.MasterLayout.destroyed = function () {
 };

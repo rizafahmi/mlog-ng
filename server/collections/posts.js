@@ -8,14 +8,15 @@
 Posts.allow({
   insert: function (userId, doc) {
     return true;
+    // return userId;
   },
 
   update: function (userId, doc, fieldNames, modifier) {
-    return true;
+    return doc.user_id === userId;
   },
 
   remove: function (userId, doc) {
-    return true;
+    return doc.user_id === userId;
   }
 });
 

@@ -15,4 +15,8 @@ Router.map(function () {
       this.route('home', {path: '/'});
   */
   this.route('posts.index', {path: '/'});
+  this.route('post.submit', {
+    path: '/submit',
+    layoutTemplate: 'BlankLayout'
+  });
 });

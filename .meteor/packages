@@ -7,3 +7,4 @@ standard-app-packages
 insecure
 semantic-ui
 iron-router
+marked
