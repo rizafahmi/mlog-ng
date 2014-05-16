@@ -2,6 +2,7 @@
   "packages": {
     "semantic-ui": {},
     "iron-router": {},
-    "marked": {}
+    "marked": {},
+    "parsleyjs-v2": {}
   }
 }
