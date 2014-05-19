@@ -5,3 +5,7 @@
 .column.post.submit {
   padding-top: 50px;
 }
+.title.item a{
+  font-weight: bold;
+  text-decoration: none;
+}

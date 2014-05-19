@@ -5,4 +5,5 @@
 .box.preview{
   overflow: scroll;
   height: 385px;
+  background-color: #fafafa;
 }
