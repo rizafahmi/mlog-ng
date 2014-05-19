@@ -4,8 +4,8 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-insecure
 semantic-ui
 iron-router
 marked
 parsleyjs-v2
+accounts-password
