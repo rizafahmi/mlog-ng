@@ -21,16 +21,17 @@ Template.PostSubmit.events({
     //TODO: Redirect to post_id page
     Router.go('posts.index');
 
+  },
+  'keydown #content': function (e, t) {
+    console.log($(e.target).val());
+    Session.set("MarkdownPreview", $(e.target).val());
   }
 });
 
 Template.PostSubmit.helpers({
-  /*
-   * Example: 
-   *  items: function () {
-   *    return Items.find();
-   *  }
-   */
+  markdownPreview: function () {
+    return Session.get("MarkdownPreview");
+  }
 });
 
 /*****************************************************************************/
