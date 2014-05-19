@@ -10,13 +10,12 @@ Router.configure({
 });
 
 Router.map(function () {
-  /*
-    Example:
-      this.route('home', {path: '/'});
-  */
   this.route('posts.index', {path: '/'});
   this.route('post.submit', {
     path: '/submit',
     layoutTemplate: 'BlankLayout'
+  });
+  this.route('post.detail', {
+    path: '/post/:_id'
   });
 });
