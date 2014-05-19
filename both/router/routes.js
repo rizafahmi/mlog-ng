@@ -10,8 +10,10 @@ Router.configure({
 });
 
 var loginHook = function (pause) {
-  this.render('Login');
-  pause();
+  if (!Meteor.userId()) {
+    this.render('Login');
+    pause();
+  }
 };
 
 Router.onBeforeAction(loginHook, {only: ['post.submit']});
@@ -24,5 +26,9 @@ Router.map(function () {
   });
   this.route('post.detail', {
     path: '/post/:_id'
+  });
+  this.route('register', {
+    path: '/register',
+    layoutTemplate: 'BlankLayout'
   });
 });

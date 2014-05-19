@@ -23,22 +23,12 @@
               </div>
             </div>
           </div>
-          <div class="ui blue submit button">Login</div>
+          <button type="submit" class="ui blue submit button">Login</button>
+          {{#if isAdminNotCreated}}
+            <a class="ui orange button" href="{{pathFor 'register'}}">Register</a>
+          {{/if}}
         </form>
       </div>
     </div>
   </div>
-  <!-- <div class="ui page grid segment"> -->
-  <!--   <div class="column post submit"> -->
-  <!--     <div class="ui form segment"> -->
-  <!--       <form name="postSubmit" data&#45;parsley&#45;validate> -->
-  <!--         <div class="field"> -->
-  <!--           <label for="">Title</label> -->
-  <!--           <input name="title" id="title" placeholder="Your awesome article title" -->
-  <!--           type="text" required> -->
-  <!--         </div> -->
-  <!--       </form> -->
-  <!--     </div> -->
-  <!--   </div> -->
-  <!-- </div> -->
 </template>
