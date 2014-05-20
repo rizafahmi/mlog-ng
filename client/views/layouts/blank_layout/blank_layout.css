@@ -2,6 +2,16 @@
 /* BlankLayout: Style */
 /*****************************************************************************/
 
+body{
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #009FDA;
+  text-decoration: none;
+}
+
 .column.post.submit {
   padding-top: 50px;
 }

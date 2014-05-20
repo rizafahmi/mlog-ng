@@ -6,6 +6,11 @@ body{
   margin: 0;
 }
 
+a {
+  color: #009FDA;
+  text-decoration: none;
+}
+
 .container{
   padding: 0 8%;
   width: auto;
