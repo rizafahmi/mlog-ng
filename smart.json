@@ -3,6 +3,7 @@
     "semantic-ui": {},
     "iron-router": {},
     "marked": {},
-    "parsleyjs-v2": {}
+    "parsleyjs-v2": {},
+    "highlightjs": {}
   }
 }

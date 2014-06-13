@@ -26,6 +26,7 @@ Template.PostItem.created = function () {
 };
 
 Template.PostItem.rendered = function () {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 };
 
 Template.PostItem.destroyed = function () {
