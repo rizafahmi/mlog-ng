@@ -20,6 +20,7 @@ Template.PostsIndex.helpers({
 /* PostsIndex: Lifecycle Hooks */
 /*****************************************************************************/
 Template.PostsIndex.created = function () {
+    hljs.initHighlightingOnLoad();
 };
 
 Template.PostsIndex.rendered = function () {
