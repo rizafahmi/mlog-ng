@@ -4,6 +4,7 @@
     "iron-router": {},
     "marked": {},
     "parsleyjs-v2": {},
-    "highlightjs": {}
+    "highlightjs": {},
+    "iron-router-progress": {}
   }
 }
