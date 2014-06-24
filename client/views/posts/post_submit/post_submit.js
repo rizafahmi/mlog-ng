@@ -23,7 +23,6 @@ Template.PostSubmit.events({
 
   },
   'keydown #content': function (e, t) {
-    console.log($(e.target).val());
     Session.set("MarkdownPreview", $(e.target).val());
   }
 });

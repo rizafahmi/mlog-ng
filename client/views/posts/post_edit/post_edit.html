@@ -1,0 +1,29 @@
+<template name="PostEdit">
+  <div class="ui page grid segment">
+    <div class="column post submit">
+      <div class="ui form">
+        <form name="postSubmit" data-parsley-validate>
+          <div class="field">
+            <label for="">Title</label>
+            <input name="title" id="title" value="{{title}}" placeholder="Your awesome article title"
+            type="text" required>
+          </div>
+          <div class="two fields">
+            <div class="field">
+              <label for="">Content</label>
+              <textarea style="height: 430px;" name="content" id="content" 
+                placeholder="Your awesome article content" required>{{content}}</textarea>
+            </div>
+            <div class="field tertiary">
+              <label for="">Preview</label>
+              <div class="box preview">
+                {{#markdown}}{{markdownPreview}}{{/markdown}}
+              </div>
+            </div>
+          </div>
+          <button class="ui orange submit button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </div> <!--./segment -->
+</template>
