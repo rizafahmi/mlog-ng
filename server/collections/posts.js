@@ -12,7 +12,9 @@ Posts.allow({
   },
 
   update: function (userId, doc, fieldNames, modifier) {
-    return doc.user_id === userId;
+    if ( Meteor.user() )
+      return true;
+    return false;
   },
 
   remove: function (userId, doc) {
