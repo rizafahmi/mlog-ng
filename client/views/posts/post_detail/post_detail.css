@@ -4,3 +4,8 @@
 .text {
   line-height: 160%;
 }
+
+img {
+  display: block;
+  max-width: 100% !important;
+}
