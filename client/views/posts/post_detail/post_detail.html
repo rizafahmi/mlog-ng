@@ -4,6 +4,8 @@
       <h2 class="ui header">{{title}}</h2>
       <div class="ui black label date">{{datePublish}}</div>
       <p class="text">{{#markdown}}{{{content}}}{{/markdown}}</p>
+
+
       <a class="ui button small animated" href="{{pathFor 'posts.index'}}">
         <div class="visible content">
           Back
@@ -12,6 +14,9 @@
           <i class="left arrow icon"></i>
         </div>
       </a>
+      {{#if currentUser}}
+      <a class="ui button small red" href="{{pathFor 'post.edit'}}">Edit</a>
+      {{/if}}
     </div>
   </div> <!--./segment -->
 </template>

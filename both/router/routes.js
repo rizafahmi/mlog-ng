@@ -21,8 +21,15 @@ Router.onBeforeAction(loginHook, {only: ['post.submit']});
 Router.map(function () {
   this.route('posts.index', {path: '/'});
   this.route('post.submit', {
-    path: '/submit',
+    path: '/admin/submit',
     layoutTemplate: 'BlankLayout',
+  });
+  this.route('post.edit', {
+    path: '/post/:_id/edit',
+    layoutTemplate: 'BlankLayout',
+    data: function() {
+      return Posts.findOne(this.params._id)
+    }
   });
   this.route('post.detail', {
     path: '/post/:_id'
