@@ -2,4 +2,12 @@
   {{#each posts}}
     {{> PostItem}}
   {{/each}}
+
+  {{#if nextPath}}
+  <div class="ui page grid segment">
+      <div class="column">
+        <a href="{{nextPath}}" class="ui button large fluid">I Want More!</a>
+      </div>
+  </div>
+  {{/if}}
 </template>

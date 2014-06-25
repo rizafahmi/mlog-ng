@@ -11,9 +11,6 @@ Template.PostsIndex.events({
 });
 
 Template.PostsIndex.helpers({
-  posts: function() {
-    return Posts.find();
-  }
 });
 
 /*****************************************************************************/

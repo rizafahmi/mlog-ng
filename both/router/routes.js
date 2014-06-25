@@ -19,7 +19,10 @@ var loginHook = function (pause) {
 Router.onBeforeAction(loginHook, {only: ['post.submit']});
 
 Router.map(function () {
-  this.route('posts.index', {path: '/'});
+  this.route('posts.index', {
+    path: '/:postsLimit?'
+  });
+
   this.route('post.submit', {
     path: '/admin/submit',
     layoutTemplate: 'BlankLayout',

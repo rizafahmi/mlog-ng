@@ -5,5 +5,7 @@ if ( Posts.find().count() === 0 ) {
     datePublish: new Date()
   }
 
-  Posts.insert(post);
+  for (var i = 0; i < 10; i++) {
+    Posts.insert(post);
+  }
 }
