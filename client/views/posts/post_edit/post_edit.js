@@ -12,7 +12,7 @@ Template.PostEdit.events({
     Posts.update(this._id, {$set: {title: title, content: content}}, function(error){
       if(error)
         console.log("Whoops, something wrong!", error.reason); 
-      Router.go('posts.index');
+      //Router.go('posts.index');
     });
   }
 });
