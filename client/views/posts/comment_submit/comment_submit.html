@@ -3,9 +3,9 @@
 <div class="ui comments">
   <div class="comment">
   {{#each comments}}
-    {{#if thumbnail}}
+    {{#if gravatar email}}
     <a class="avatar">
-      <img src="/images/demo/avatar.jpg">
+      <img src="{{gravatar email}}">
     </a>
     {{/if}}
     <div class="content">

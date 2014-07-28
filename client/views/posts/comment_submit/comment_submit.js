@@ -12,6 +12,7 @@ Template.CommentSubmit.events({
     e.preventDefault();
 
     var post = Posts.findOne();
+
     var comment = {
       email: $(e.target).find('[name=email]').val(),
       comment: $(e.target).find('[name=comment]').val(),
@@ -52,3 +53,8 @@ UI.registerHelper('split', function (email) {
 UI.registerHelper('formatDate', function (context) {
   return moment(context).fromNow();
 });
+
+UI.registerHelper('gravatar', function (email) {
+  return Gravatar.imageUrl(email);
+});
+
