@@ -7,7 +7,6 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElemen
 loadMixpanel();
 
 var settings = Meteor.settings;
-console.log(settings);
 var mixpanelToken = settings && settings.public.mixpanel;
 
 if (!mixpanelToken)

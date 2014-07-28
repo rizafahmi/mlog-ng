@@ -1,6 +1,7 @@
 PostDetailController = RouteController.extend({
   waitOn: function () {
-    return Meteor.subscribe('post_detail', this.params.slug);
+    return [Meteor.subscribe('post_detail', this.params.slug),
+            Meteor.subscribe('comments', {sort: {dateCreated: -1}})];
   },
 
 
