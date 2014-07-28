@@ -12,6 +12,7 @@ accounts-password
 accounts-base
 highlightjs
 iron-router-progress
-mixpanel
 urlify2
 rssfeed
+moment
+mixpanel

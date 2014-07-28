@@ -1,0 +1,35 @@
+<template name="CommentSubmit">
+<h3 class="ui dividing header">Comment</h3>
+<div class="ui comments">
+  <div class="comment">
+  {{#each comments}}
+    {{#if thumbnail}}
+    <a class="avatar">
+      <img src="/images/demo/avatar.jpg">
+    </a>
+    {{/if}}
+    <div class="content">
+      <a class="author">{{split email}}</a>
+      <div class="metadata"><span class="date">{{formatDate dateCreated}}</span></div>
+      <div class="text">
+        {{comment}}
+      </div>
+    </div>
+  {{else}}
+    <p>Add your voice!</p>
+  {{/each}}
+  </div>
+  <h4 class="ui dividing header">Add your opinion</h4>
+  <form class="ui reply form" name="commentForm">
+    <div class="field">
+      <input type="email" name="email" placeholder="me@awesomeness.com" required>
+    </div>
+    <div class="field">
+      <textarea name="comment" placeholder="My awesome opinion!" required></textarea>
+    </div>
+    <button type="submit" class="ui button orange submit labeled icon">
+      <i class="icon edit"></i> Add {{#if comments}}Reply{{else}}Comment{{/if}}
+    </button>
+  </form>
+</div>
+</template>
