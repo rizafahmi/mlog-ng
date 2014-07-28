@@ -10,7 +10,6 @@ PostsIndexController = RouteController.extend({
 
   waitOn: function () {
     var limit = parseInt(this.params.postsLimit) || 5;
-console.log(this.findOptions());
     Meteor.subscribe('posts_index', this.findOptions());
   },
 
