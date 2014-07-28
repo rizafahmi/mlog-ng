@@ -28,14 +28,14 @@ Router.map(function () {
     layoutTemplate: 'BlankLayout',
   });
   this.route('post.edit', {
-    path: '/post/:_id/edit',
+    path: '/post/:slug/edit',
     layoutTemplate: 'BlankLayout',
-    data: function() {
-      return Posts.findOne(this.params._id)
-    }
+    // data: function() {
+    //   return Posts.findOne({slug: this.params.slug})
+    // }
   });
   this.route('post.detail', {
-    path: '/post/:_id'
+    path: '/post/:slug'
   });
   this.route('register', {
     path: '/register',

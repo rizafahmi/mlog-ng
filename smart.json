@@ -5,6 +5,7 @@
     "marked": {},
     "parsleyjs-v2": {},
     "highlightjs": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "urlify2": {}
   }
 }

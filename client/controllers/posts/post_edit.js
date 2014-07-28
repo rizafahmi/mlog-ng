@@ -1,10 +1,10 @@
 PostEditController = RouteController.extend({
   waitOn: function () {
-    Meteor.subscribe('post_detail', this.params._id);
+    return Meteor.subscribe('post_detail', this.params.slug);
   },
 
   data: function () {
-    return Posts.findOne(this.params._id);
+    return Posts.findOne({slug: this.params.slug});
   },
 
   action: function () {

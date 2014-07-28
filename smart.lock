@@ -7,13 +7,14 @@
       "marked": {},
       "parsleyjs-v2": {},
       "highlightjs": {},
-      "iron-router-progress": {}
+      "iron-router-progress": {},
+      "urlify2": {}
     },
     "packages": {
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
-        "tag": "v0.18.0",
-        "commit": "a27035712167b248366a7719399a2257513530ee"
+        "tag": "v0.19.0",
+        "commit": "23ddf7b58db125cc33d0d95d58fcac940f262481"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
@@ -37,8 +38,13 @@
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.4.0",
-        "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
+        "tag": "v0.4.1",
+        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
+      },
+      "urlify2": {
+        "git": "https://github.com/peerlibrary/meteor-urlify2.git",
+        "tag": "v0.2.2",
+        "commit": "5d33ec1eaa1f815a56a0b70c0c9eddc4aed4c33e"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
