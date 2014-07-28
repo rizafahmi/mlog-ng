@@ -6,6 +6,7 @@
     "parsleyjs-v2": {},
     "highlightjs": {},
     "iron-router-progress": {},
-    "urlify2": {}
+    "urlify2": {},
+    "rssfeed": {}
   }
 }

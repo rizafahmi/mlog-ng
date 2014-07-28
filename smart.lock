@@ -8,7 +8,8 @@
       "parsleyjs-v2": {},
       "highlightjs": {},
       "iron-router-progress": {},
-      "urlify2": {}
+      "urlify2": {},
+      "rssfeed": {}
     },
     "packages": {
       "semantic-ui": {
@@ -45,6 +46,11 @@
         "git": "https://github.com/peerlibrary/meteor-urlify2.git",
         "tag": "v0.2.2",
         "commit": "5d33ec1eaa1f815a56a0b70c0c9eddc4aed4c33e"
+      },
+      "rssfeed": {
+        "git": "https://github.com/raix/Meteor-rssfeed.git",
+        "tag": "v0.0.4",
+        "commit": "e592cda10c553209491aa08c74096fc4ddefe3d7"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
