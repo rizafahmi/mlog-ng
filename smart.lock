@@ -9,7 +9,8 @@
       "highlightjs": {},
       "iron-router-progress": {},
       "urlify2": {},
-      "rssfeed": {}
+      "rssfeed": {},
+      "moment": {}
     },
     "packages": {
       "semantic-ui": {
@@ -51,6 +52,11 @@
         "git": "https://github.com/raix/Meteor-rssfeed.git",
         "tag": "v0.0.4",
         "commit": "e592cda10c553209491aa08c74096fc4ddefe3d7"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
