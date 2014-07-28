@@ -10,7 +10,8 @@
       "iron-router-progress": {},
       "urlify2": {},
       "rssfeed": {},
-      "moment": {}
+      "moment": {},
+      "gravatar": {}
     },
     "packages": {
       "semantic-ui": {
@@ -58,10 +59,25 @@
         "tag": "v2.6.0",
         "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
+      "gravatar": {
+        "git": "https://github.com/tmeasday/meteor-gravatar.git",
+        "tag": "v0.0.4",
+        "commit": "d1052ff4401725c23fb199c0e0a36e29b926bc22"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "crypto-md5": {
+        "git": "https://github.com/oortcloud/meteor-crypto-md5.git",
+        "tag": "v3.1.2.2",
+        "commit": "75bbb3eeace302122d3554a6212a6fe92553fa18"
+      },
+      "crypto-base": {
+        "git": "https://github.com/oortcloud/meteor-crypto-base.git",
+        "tag": "v3.1.2.1",
+        "commit": "5df8d82a0595553415bbfae2930c6ecbeece5794"
       }
     }
   }

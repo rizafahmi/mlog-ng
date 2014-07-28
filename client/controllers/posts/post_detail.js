@@ -6,7 +6,7 @@ PostDetailController = RouteController.extend({
 
 
   data: function () {
-    return Posts.findOne({slug: this.params.slug});
+    return Posts.findOne({slug: this.params.slug}, {sort: {dateCreated: 1}});
   },
 
   action: function () {
