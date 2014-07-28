@@ -10,8 +10,10 @@ Template.PostSubmit.events({
    */
   'submit form': function (e, tmpl) {
     e.preventDefault();
+    var title = $(e.target).find('input[name=title]').val();
     var post = {
-      title: $(e.target).find('input[name=title]').val(),
+      slug: URLify2(title),
+      title: title,
       content: $(e.target).find('textarea').val(),
       datePublish: new Date()
     }

@@ -11,12 +11,9 @@ Template.PostDetail.events({
 });
 
 Template.PostDetail.helpers({
-  /*
-   * Example: 
-   *  items: function () {
-   *    return Items.find();
-   *  }
-   */
+   // posts: function () {
+   //   return Posts.find();
+   // }
 });
 
 /*****************************************************************************/
