@@ -9,7 +9,7 @@ Template.MasterLayout.events({
    *  }
    */
   'submit form': function (e, tmpl) {
-    console.log("submit");
+    App.track('Subscribe');
   }
 });
 
