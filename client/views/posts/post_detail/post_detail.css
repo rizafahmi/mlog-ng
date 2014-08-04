@@ -9,3 +9,6 @@ img {
   display: block;
   max-width: 100% !important;
 }
+.hljs, .hljs-tag, .css .hljs-rules, .css .hljs-value, .css .hljs-function .hljs-preprocessor, .hljs-pragma {
+  overflow: scroll;
+}
