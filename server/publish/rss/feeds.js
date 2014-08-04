@@ -11,7 +11,7 @@ RssFeed.publish('feed', function ( query ) {
   Posts.find({}, {sort: {datePublish: -1}}).forEach(function(doc) {
     self.addItem({
       title: doc.title,
-      description: doc.content,
+      description: marked(doc.content),
       link: 'http://www.elixirdose.com/post/' + doc.slug,
       pubDate: doc.datePublish
 

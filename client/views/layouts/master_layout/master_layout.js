@@ -8,6 +8,9 @@ Template.MasterLayout.events({
    *
    *  }
    */
+  'submit form': function (e, tmpl) {
+    console.log("submit");
+  }
 });
 
 Template.MasterLayout.helpers({
