@@ -8,6 +8,9 @@ Template.MasterLayout.events({
    *
    *  }
    */
+  'submit form': function (e, tmpl) {
+    App.track('Subscribe');
+  }
 });
 
 Template.MasterLayout.helpers({
