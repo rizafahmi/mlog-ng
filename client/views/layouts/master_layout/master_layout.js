@@ -29,6 +29,7 @@ Template.MasterLayout.created = function () {
 };
 
 Template.MasterLayout.rendered = function () {
+  $("#adv").append('<a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>');
 };
 
 Template.MasterLayout.destroyed = function () {
