@@ -1,3 +1,18 @@
 <template name="NotFound">
-  client/views/shared/not_found/not_found.html
+  <div class="ui page grid segment">
+    <div class="column">
+      <h2 class="ui header">Oooopppss.. The page was moved or not found.</h2>
+      <p>Rewind or try another page, please.</p>
+      <div class="ui dividing">
+        <a class="ui button small animated" href="{{pathFor 'posts.index'}}">
+          <div class="visible content">
+            Back
+          </div>
+          <div class="hidden content">
+            <i class="left arrow icon"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
