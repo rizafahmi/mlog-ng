@@ -9,6 +9,8 @@
     "urlify2": {},
     "rssfeed": {},
     "moment": {},
-    "gravatar": {}
+    "gravatar": {},
+    "analytics": {},
+    "kadira": {}
   }
 }
